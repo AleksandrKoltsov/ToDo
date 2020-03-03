@@ -22,10 +22,10 @@ function App() {
     setList(list.filter(item => item.id !== id));
   }
 
-  function addTodo(title) {
+  function addTodo(title) { //добавляю новую запись
       setList(list.concat([{
           title: title,
-          id: Date.now(),
+          id: Date.now(), //использую дату как уникальный идетнтификатор
           completed: false
       }]))
   }
